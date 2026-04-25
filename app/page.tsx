@@ -4,7 +4,7 @@ import { ArrowRight, LockKeyhole, Sparkles } from "lucide-react";
 
 const basePath = process.env.NODE_ENV === "production" ? "/raresoul-64-mvp" : "";
 const assetPath = (path: string) => `${basePath}${path}`;
-const heroNightOwlImage = assetPath("/assets/home/hero-night-owl.png");
+const heroNightOwlImage = assetPath("/assets/home/optimized/hero-night-owl.jpg");
 
 type AnimalType = {
   code: string;
@@ -30,7 +30,7 @@ const animals: AnimalType[] = [
     name: "黑曜鷹型",
     family: "策略獵手族",
     rarity: 2.1,
-    image: assetPath("/assets/home/cards/black-eagle.png"),
+    image: assetPath("/assets/home/optimized/cards/black-eagle.jpg"),
     accent: "#9c7cff",
     pool: "夜色主角卡池",
     line: "你不是冷淡，是太早看見整盤棋。",
@@ -41,7 +41,7 @@ const animals: AnimalType[] = [
     name: "夜行貓頭鷹型",
     family: "知識觀察族",
     rarity: 3.3,
-    image: assetPath("/assets/home/cards/night-owl.png"),
+    image: assetPath("/assets/home/optimized/cards/night-owl.jpg"),
     accent: "#38bdf8",
     pool: "夜色主角卡池",
     line: "你不是不合群，是腦內一直有座正在運轉的觀察塔。",
@@ -52,7 +52,7 @@ const animals: AnimalType[] = [
     name: "獅王統御型",
     family: "權力領航族",
     rarity: 1.8,
-    image: assetPath("/assets/home/cards/lion.png"),
+    image: assetPath("/assets/home/optimized/cards/lion.jpg"),
     accent: "#f59e0b",
     pool: "夜色主角卡池",
     line: "你不是想控制所有人，是天生會看見方向與槓桿。",
@@ -63,7 +63,7 @@ const animals: AnimalType[] = [
     name: "銀狐破局型",
     family: "創新破局族",
     rarity: 3.2,
-    image: assetPath("/assets/home/cards/silver-fox.png"),
+    image: assetPath("/assets/home/optimized/cards/silver-fox.jpg"),
     accent: "#34d399",
     pool: "夜色主角卡池",
     line: "你不是故意唱反調，是總能看到另一條路。",
@@ -74,7 +74,7 @@ const animals: AnimalType[] = [
     name: "白鹿先知型",
     family: "深層洞察族",
     rarity: 1.5,
-    image: assetPath("/assets/home/cards/white-deer.png"),
+    image: assetPath("/assets/home/optimized/cards/white-deer.jpg"),
     accent: "#c4a3ff",
     pool: "靈感先知卡池",
     line: "你不是敏感過頭，是能聽見別人還沒說出口的訊號。",
@@ -85,7 +85,7 @@ const animals: AnimalType[] = [
     name: "月光水母型",
     family: "靈魂價值族",
     rarity: 4.4,
-    image: assetPath("/assets/home/cards/moon-jellyfish.png"),
+    image: assetPath("/assets/home/optimized/cards/moon-jellyfish.jpg"),
     accent: "#7dd3fc",
     pool: "靈感先知卡池",
     line: "你不是脆弱，是內在有一片需要被好好保護的海。",
@@ -96,7 +96,7 @@ const animals: AnimalType[] = [
     name: "赤羽鳳凰型",
     family: "關係領航族",
     rarity: 2.5,
-    image: assetPath("/assets/home/cards/phoenix.png"),
+    image: assetPath("/assets/home/optimized/cards/phoenix.jpg"),
     accent: "#fb7185",
     pool: "靈感先知卡池",
     line: "你很會照亮別人，也容易把期待扛在自己身上。",
@@ -107,7 +107,7 @@ const animals: AnimalType[] = [
     name: "霧海海豚型",
     family: "流動共感族",
     rarity: 8.1,
-    image: assetPath("/assets/home/cards/dolphin.png"),
+    image: assetPath("/assets/home/optimized/cards/dolphin.jpg"),
     accent: "#5eead4",
     pool: "靈感先知卡池",
     line: "你不是三分鐘熱度，是靈感需要一直游向新海域。",
@@ -118,7 +118,7 @@ const animals: AnimalType[] = [
     name: "雪原豹型",
     family: "秩序守成族",
     rarity: 11.6,
-    image: assetPath("/assets/home/cards/snow-leopard.png"),
+    image: assetPath("/assets/home/optimized/cards/snow-leopard.jpg"),
     accent: "#93c5fd",
     pool: "守護穩定卡池",
     line: "你不是固執，是知道穩定背後需要長期守住的秩序。",
@@ -129,7 +129,7 @@ const animals: AnimalType[] = [
     name: "森鹿守護型",
     family: "溫柔守護族",
     rarity: 13.8,
-    image: assetPath("/assets/home/cards/forest-deer.png"),
+    image: assetPath("/assets/home/optimized/cards/forest-deer.jpg"),
     accent: "#86efac",
     pool: "守護穩定卡池",
     line: "你不是不說需求，是常常先把別人放在自己前面。",
@@ -140,7 +140,7 @@ const animals: AnimalType[] = [
     name: "鐵脊狼王型",
     family: "結構管理族",
     rarity: 8.7,
-    image: assetPath("/assets/home/cards/wolf-king.png"),
+    image: assetPath("/assets/home/optimized/cards/wolf-king.jpg"),
     accent: "#f97316",
     pool: "守護穩定卡池",
     line: "你不是強勢，是看得見系統怎麼運作才有效。",
@@ -151,7 +151,7 @@ const animals: AnimalType[] = [
     name: "暖象凝聚型",
     family: "群體照護族",
     rarity: 12.3,
-    image: assetPath("/assets/home/cards/warm-elephant.png"),
+    image: assetPath("/assets/home/optimized/cards/warm-elephant.jpg"),
     accent: "#f9a8d4",
     pool: "守護穩定卡池",
     line: "你不是愛操心，是天生會記得誰還沒被照顧到。",
@@ -162,7 +162,7 @@ const animals: AnimalType[] = [
     name: "玄岩豹型",
     family: "冷靜拆解族",
     rarity: 5.4,
-    image: assetPath("/assets/home/cards/obsidian-panther.png"),
+    image: assetPath("/assets/home/optimized/cards/obsidian-panther.jpg"),
     accent: "#2dd4bf",
     pool: "行動閃耀卡池",
     line: "你不是難靠近，是習慣先觀察、再精準出手。",
@@ -173,7 +173,7 @@ const animals: AnimalType[] = [
     name: "流螢貓型",
     family: "感官美感族",
     rarity: 8.8,
-    image: assetPath("/assets/home/cards/firefly-cat.png"),
+    image: assetPath("/assets/home/optimized/cards/firefly-cat.jpg"),
     accent: "#d8b4fe",
     pool: "行動閃耀卡池",
     line: "你不是安靜無感，是美感與情緒都藏在很細的地方。",
@@ -184,7 +184,7 @@ const animals: AnimalType[] = [
     name: "烈焰獵豹型",
     family: "即時行動族",
     rarity: 4.3,
-    image: assetPath("/assets/home/cards/flame-leopard.png"),
+    image: assetPath("/assets/home/optimized/cards/flame-leopard.jpg"),
     accent: "#fb923c",
     pool: "行動閃耀卡池",
     line: "你不是衝動，是身體比腦袋更早讀懂現場。",
@@ -195,7 +195,7 @@ const animals: AnimalType[] = [
     name: "金焰孔雀型",
     family: "舞台感染族",
     rarity: 8.5,
-    image: assetPath("/assets/home/cards/gold-peacock.png"),
+    image: assetPath("/assets/home/optimized/cards/gold-peacock.jpg"),
     accent: "#facc15",
     pool: "行動閃耀卡池",
     line: "你不是只愛熱鬧，是能把生命力帶進一個空間。",
@@ -253,7 +253,8 @@ function rarityRange(rarity: number) {
 
 function AnimalImage({
   animal,
-  className = ""
+  className = "",
+  priority = false
 }: {
   animal: AnimalType;
   className?: string;
@@ -266,8 +267,8 @@ function AnimalImage({
       <img
         src={animal.image}
         alt={`${animal.name}卡通造型`}
-        loading="eager"
-        decoding="sync"
+        loading={priority ? "eager" : "lazy"}
+        decoding="async"
         className="absolute inset-0 h-full w-full object-contain p-1"
       />
     </div>
@@ -370,7 +371,7 @@ export default function HomePage() {
                 <div className="grid grid-cols-4 gap-2">
                   {pool.animals.map((animal) => (
                     <div key={animal.code} className="text-center">
-                      <AnimalImage animal={animal} className="aspect-square rounded-2xl" />
+                      <AnimalImage animal={animal} className="aspect-square rounded-2xl" priority />
                       <p className="mt-2 truncate text-xs font-semibold text-white">{animal.name}</p>
                     </div>
                   ))}
@@ -401,7 +402,7 @@ export default function HomePage() {
           </div>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-            {animals.map((animal, index) => (
+            {animals.map((animal) => (
               <article
                 key={animal.code}
                 className="flex min-h-[392px] flex-col rounded-2xl border border-white/10 bg-white/[0.055] p-4"
@@ -417,7 +418,6 @@ export default function HomePage() {
                   </div>
                   <AnimalImage
                     animal={animal}
-                    priority={index < 2}
                     className="aspect-square rounded-2xl shadow-[0_14px_40px_rgba(0,0,0,0.22)]"
                   />
                 </div>
@@ -460,7 +460,7 @@ export default function HomePage() {
             <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
               <div className="relative aspect-[16/9] overflow-hidden rounded-3xl bg-[#faf7f1] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.35)]">
                 <img
-                  src={assetPath("/assets/home/animal-set-03.png")}
+                  src={assetPath("/assets/home/optimized/animal-set-03.jpg")}
                   alt="男生圖鑑與女生圖鑑封面"
                   loading="eager"
                   decoding="sync"
