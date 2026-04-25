@@ -1,4 +1,4 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { ArrowRight, LockKeyhole, Sparkles } from "lucide-react";
 
@@ -253,8 +253,7 @@ function rarityRange(rarity: number) {
 
 function AnimalImage({
   animal,
-  className = "",
-  priority = false
+  className = ""
 }: {
   animal: AnimalType;
   className?: string;
@@ -264,14 +263,12 @@ function AnimalImage({
     <div
       className={`relative overflow-hidden bg-[radial-gradient(circle_at_50%_34%,rgba(240,198,109,0.16),rgba(255,255,255,0.045)_46%,rgba(255,255,255,0)_72%)] ${className}`}
     >
-      <Image
+      <img
         src={animal.image}
         alt={`${animal.name}卡通造型`}
-        fill
-        priority={priority}
-        unoptimized
-        className="object-contain p-1"
-        sizes="(min-width: 1024px) 180px, 42vw"
+        loading="eager"
+        decoding="sync"
+        className="absolute inset-0 h-full w-full object-contain p-1"
       />
     </div>
   );
@@ -295,18 +292,18 @@ export default function HomePage() {
         <div className="absolute right-[14%] top-[16%] h-1.5 w-1.5 rounded-full bg-[#f0c66d] shadow-[0_0_24px_7px_rgba(240,198,109,0.3)] motion-safe:animate-[sparkle_4s_ease-in-out_infinite]" />
 
         <div className="shell relative grid min-h-[calc(100vh-64px)] items-center gap-10 py-12 lg:grid-cols-[0.9fr_0.82fr] lg:py-16">
-          <div>
+          <div className="text-center lg:text-left">
             <p className="inline-flex rounded-full border border-[#d8b4fe]/30 bg-[#d8b4fe]/10 px-4 py-2 text-sm font-semibold text-[#f3e8ff] shadow-[0_0_32px_rgba(168,85,247,0.18)]">
               RareSoul 64 靈魂物種測驗
             </p>
-            <h1 className="mt-6 max-w-4xl text-[clamp(3rem,6.8vw,5.7rem)] font-semibold leading-[1.04] tracking-normal">
+            <h1 className="mx-auto mt-6 max-w-4xl text-[clamp(3rem,6.8vw,5.7rem)] font-semibold leading-[1.04] tracking-normal lg:mx-0">
               <span className="block">抽出你的</span>
               <span className="block whitespace-nowrap">靈魂物種</span>
               <span className="mt-3 block text-[clamp(2rem,4.4vw,4.1rem)] text-[#f0c66d]">
                 看懂你為什麼會這樣
               </span>
             </h1>
-            <p className="mt-6 max-w-2xl text-xl leading-9 text-[#e7ded0]/82">
+            <p className="mx-auto mt-6 max-w-2xl text-xl leading-9 text-[#e7ded0]/82 lg:mx-0">
               <span className="block">3 分鐘建立你的專屬人格圖鑑。</span>
               <span className="block">看見你的稀有度、反應模式，以及最容易被誰點燃或消耗。</span>
             </p>
@@ -330,14 +327,12 @@ export default function HomePage() {
               </div>
               <div className="rounded-[24px] border border-[#8fd6b0]/20 bg-[radial-gradient(circle_at_50%_12%,rgba(216,180,254,0.2),transparent_34%),linear-gradient(180deg,rgba(22,49,39,0.96),rgba(9,18,15,0.98))] p-5">
                 <div className="relative mx-auto aspect-square w-full max-w-[330px] overflow-hidden rounded-[24px] shadow-[0_20px_80px_rgba(0,0,0,0.32)]">
-                  <Image
+                  <img
                     src={heroNightOwlImage}
                     alt="夜行貓頭鷹型首頁示範圖"
-                    fill
-                    priority
-                    unoptimized
-                    className="object-cover"
-                    sizes="330px"
+                    loading="eager"
+                    decoding="sync"
+                    className="h-full w-full object-cover"
                   />
                 </div>
                 <div className="mt-4 rounded-2xl border border-white/10 bg-black/20 p-5 text-center">
@@ -355,7 +350,7 @@ export default function HomePage() {
 
       <section className="border-y border-white/10 bg-[#091611] py-14">
         <div className="shell">
-          <div className="max-w-4xl">
+          <div className="mx-auto max-w-4xl text-center lg:mx-0 lg:text-left">
             <p className="font-semibold text-[#f0c66d]">抽卡池預覽</p>
             <h2 className="mt-2 text-4xl font-semibold leading-[1.14] text-white md:text-5xl">
               <span className="block">你會抽到哪一隻？</span>
@@ -393,7 +388,7 @@ export default function HomePage() {
 
       <section id="types" className="bg-[#0c1914] py-16">
         <div className="shell">
-          <div className="max-w-5xl">
+          <div className="mx-auto max-w-5xl text-center lg:mx-0 lg:text-left">
             <p className="font-semibold text-[#f0c66d]">人格圖鑑收錄</p>
             <h2 className="mt-2 text-4xl font-semibold leading-[1.14] text-white md:text-5xl">
               <span className="block">16 種主物種</span>
@@ -446,7 +441,7 @@ export default function HomePage() {
 
       <section id="guide-entry" className="bg-[#091611] py-16">
         <div className="shell">
-          <div className="max-w-4xl">
+          <div className="mx-auto max-w-4xl text-center lg:mx-0 lg:text-left">
             <p className="font-semibold text-[#f0c66d]">開始測驗</p>
             <h2 className="mt-2 text-4xl font-semibold leading-[1.14] text-white md:text-5xl">
               <span className="block">先選一張圖鑑封面</span>
@@ -464,13 +459,12 @@ export default function HomePage() {
           >
             <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
               <div className="relative aspect-[16/9] overflow-hidden rounded-3xl bg-[#faf7f1] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.35)]">
-                <Image
+                <img
                   src={assetPath("/assets/home/animal-set-03.png")}
                   alt="男生圖鑑與女生圖鑑封面"
-                  fill
-                  unoptimized
-                  className="object-cover transition duration-500 group-hover:scale-[1.025]"
-                  sizes="(min-width: 1024px) 620px, 92vw"
+                  loading="eager"
+                  decoding="sync"
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]"
                 />
               </div>
               <div>
@@ -491,7 +485,7 @@ export default function HomePage() {
       <section className="relative bg-[#120f2b] py-16">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_18%,rgba(139,92,246,0.26),transparent_30%)]" />
         <div className="shell relative">
-          <div className="max-w-5xl">
+          <div className="mx-auto max-w-5xl text-center lg:mx-0 lg:text-left">
             <p className="font-semibold text-[#f0c66d]">完整報告</p>
             <h2 className="mt-2 text-4xl font-semibold leading-[1.14] text-white md:text-5xl">
               <span className="block">解鎖你的性格底層劇本</span>
@@ -521,7 +515,7 @@ export default function HomePage() {
 
       <section className="bg-[#07100d] py-16">
         <div className="shell">
-          <div className="max-w-5xl">
+          <div className="mx-auto max-w-5xl text-center lg:mx-0 lg:text-left">
             <p className="font-semibold text-[#f0c66d]">關係圖譜</p>
             <h2 className="mt-2 text-4xl font-semibold leading-[1.14] text-white md:text-5xl">
               <span className="block">兩個人的關係</span>
