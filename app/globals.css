@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #07100d;
+  color: #f7f2e8;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shell {
+  width: min(1280px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid rgba(217, 116, 95, 0.45);
+  outline-offset: 3px;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.82);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes cardReveal {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    filter: saturate(0.98);
+  }
+  45% {
+    transform: translateY(-6px) scale(1.018);
+    filter: saturate(1.08);
+  }
+  52% {
+    transform: translateY(-6px) scale(1.018);
+    filter: saturate(1.12) brightness(1.04);
+  }
+}

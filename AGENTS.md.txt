@@ -1,0 +1,64 @@
+# Codex Project Instructions
+
+You are building the RareSoul 16 web product.
+
+## Primary product spec
+
+Read and follow:
+
+- `docs/PRD.md`
+
+This file is the source of truth for product scope, pages, database schema, scoring logic, report structure, payment flow, and MVP requirements.
+
+## Development goal
+
+Build a production-ready MVP for RareSoul 16 using:
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Supabase PostgreSQL
+- Supabase Auth
+- Recharts
+- OpenAI API integration placeholder
+- Payment integration placeholder for ECPay / NewebPay / TapPay
+
+## Important constraints
+
+1. Do not use MBTI, Myers-Briggs, or official MBTI branding in the frontend.
+2. Use RareSoul 16 naming and self-owned archetype names.
+3. Frontend result names must use animal archetypes such as:
+   - 黑曜鷹型
+   - 夜行貓頭鷹型
+   - 獅王統御型
+   - 銀狐破局型
+   - 白鹿先知型
+   - 月光水母型
+   - 赤羽鳳凰型
+   - 霧海海豚型
+   - 雪原豹型
+   - 森鹿守護型
+   - 鐵脊狼王型
+   - 暖象凝聚型
+   - 黑貓工匠型
+   - 水豚藝術型
+   - 疾風花豹型
+   - 金羽孔雀型
+4. Internal codes may use `ENFP-like`, `INTJ-like`, etc., but they should not be primary frontend labels.
+5. Keep the app mobile-first.
+6. Prioritize a complete MVP flow over excessive styling.
+
+## First implementation task
+
+Create the project structure and implement:
+
+1. Homepage
+2. 108-question quiz flow using seed data
+3. Scoring engine
+4. Result preview page
+5. Full report page with locked/unlocked state
+6. Supabase schema migrations
+7. Admin seed data structure
+8. Couple invite placeholder flow
+
+Before writing code, inspect `docs/PRD.md` and propose the implementation plan.
