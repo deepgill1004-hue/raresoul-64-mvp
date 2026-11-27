@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fmatch\u002F[mode]","\u002Fmatch\u002F[mode]\u002Fresult","\u002Ft\u002F[slug]","\u002Ft\u002F[slug]\u002Fpair","\u002Ft\u002F[slug]\u002Freport","\u002Ft\u002F[slug]\u002Fresult","\u002Ftypes\u002F[code]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
